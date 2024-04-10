@@ -1,0 +1,203 @@
+.container-login {
+    background-color: #b19376;
+    padding: 20px;
+}
+
+.container-form {
+    background-color: white;
+    margin: 35px auto;
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-form h1 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container-form h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.container-form div {
+    margin-bottom: 15px;
+}
+
+.container-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.container-form input,
+.container-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.btn-voltar {
+    border: 2px solid white;
+    background: none;
+    color: white;
+    border-radius: 12px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-voltar:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-submit,
+.btn-cadastrar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    margin-top: 10px;
+    color: #FFF;
+    background-color: #b19376;
+    border: 1px solid #b19376;
+}
+
+.btn-cadastrar {
+    color: #b19376;
+    background-color: #FFF;
+    border: 2px solid #b19376;
+}
+
+.btn-submit:hover {
+    background-color: #795d46;
+    border-color: #ccb499;
+}
+
+.btn-cadastrar:hover {
+    background-color: #f2eee9;
+    border-color: #795d46;
+}
+
+.container-form {
+    background-color: white;
+    margin: 35px auto;
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.container-form div {
+    margin-bottom: 15px;
+}
+
+.container-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.container-form input,
+.container-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.radio-custom {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #997C61;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .radio-custom::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #997C61;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-genero label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #997C61;
+}
+
+.radio-custom {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #997C61;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+}
+
+input#data_nascimento {
+    color: #795d46;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .radio-custom::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #997C61;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    display: none;
+}
+

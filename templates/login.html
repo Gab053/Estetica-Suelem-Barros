@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estética</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div><a href="/"><img src="../static/img/logo.png" class="header-logo"></a></div>
+        <ul>
+            <a href="/login">Agendar</a>
+            <a href="#">Procedimentos</a>
+            <a href="#">A Estética</a>
+        </ul>
+        <ul>
+        <a href="/login">Acessar</a>
+        </ul>
+    </header>
+
+    <div class="container-login">
+        <div>
+            <a href="homepage.html" class="btn-voltar">Voltar</a>
+        </div>
+        <div class="container-form">
+            <h1>Acessar</h1>
+            <h5>Nos informe para podermos realizar melhor seu atendimento.</h5>
+
+            <form action="/submit" method="post">
+
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input class="cpf" type="text" id="cpf" name="cpf" required placeholder="Ex.: 000.000.000-00" maxlength="14">
+                </div>
+        
+                <div>
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn-submit">Entrar</button>
+                </div>
+                
+                <div class="button-container">
+                    <a class="btn-cadastrar">Cadastrar</a>
+                </div>
+                <div class="input-cadastrar hidden">
+                    <label for="nome_completo">Nome Completo:</label>
+                    <input type="text" id="nome_completo" name="nome_completo">
+                </div>
+        
+                <div class="container-genero input-cadastrar hidden">
+                    <div>Gênero:</div>
+                    <label for="feminino">
+                        <input type="radio" id="feminino" name="genero" value="feminino">
+                        <span class="radio-custom"></span> Feminino
+                    </label>
+                    <label for="masculino">
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <span class="radio-custom"></span> Masculino
+                    </label>
+                    <label for="outro">
+                        <input type="radio" id="outro" name="genero" value="outro">
+                        <span class="radio-custom"></span> Outro
+                    </label>
+                </div>
+        
+                <div class="input-cadastrar hidden">
+                    <label for="telefone1">Telefone 1:</label>
+                    <input class="tel" type="tel" id="telefone1" name="telefone1">
+                </div>
+        
+                <div class="input-cadastrar hidden">
+                    <label for="telefone2">Telefone 2:</label>
+                    <input class="tel" type="tel" id="telefone2" name="telefone2">
+                </div>
+        
+                <div class="input-cadastrar hidden">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+            <i id="backToTop" class="fa-solid fa-circle-chevron-up footer-icon"></i>     
+        <div class="container">
+            <img src="../static/img/logo.png" alt="Logo da estetica" class="footer-logo">
+            <div class="footer-info">
+                <h4>Estamos localizados no endereço: </h4>
+                <p><i class="fa-solid fa-map-location-dot"></i> Rua Diogo Móia N° 535 </p>
+                <p>Umarizal</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Entre em contato: </h4>
+                <p><i class="fa-solid fa-phone"></i> (91)3333-3333</p>
+                <p><i class="fa-regular fa-envelope"></i> suelem@barros.com</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/login.js"></script>
+</body>
+</html>
