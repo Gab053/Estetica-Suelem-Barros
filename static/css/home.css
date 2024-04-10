@@ -89,9 +89,9 @@ button{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
-    min-height: 700px;
+    min-height: 600px;
 
 
     border-top: 3px solid #6C3F1F;
@@ -102,7 +102,7 @@ button{
 }
 .procedimentos h4{
     color: #6C3F1F;
-    margin: 40px 50px 0 50px;
+    margin: 10px 50px 0 50px;
     font-size: 20px;
     padding: 8px 20px;
 }
@@ -134,7 +134,7 @@ button{
 .carrossel .card{
     list-style: none;
     color:#6C3F1F;
-    height: 320px;
+    height: 300px;
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -154,7 +154,7 @@ button{
 }
 
 .procedimentos a{
-    text-weight: 200px;
+
     font-size: 15px;
     padding: 8px 20px;
     border: solid 2px #6C3F1F;
@@ -164,7 +164,7 @@ button{
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: 80ms linear;
-    margin-bottom: 500px;
+    margin: 0 30px 0 20px;
 }
 .procedimentos a:hover{
     color: #FBF9F6;
