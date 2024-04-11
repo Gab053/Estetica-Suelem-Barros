@@ -23,6 +23,7 @@ header{
     border-radius: 20px;
     position: fixed;
     top: 0px;
+    z-index: 4;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .header-logo{
@@ -32,7 +33,7 @@ header{
 }
 header ul a{
     margin-right: 40px;
-    padding: 8px;
+    padding: 8px 15px;
     color: #997C61;
     text-decoration: none;
     border-radius: 20px;
@@ -54,7 +55,7 @@ button{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 
@@ -107,24 +108,67 @@ button{
     padding: 8px 20px;
 }
 
-.procedimentos ul{
+.wrapper{
     max-width: 1100px;
     width: 100%;
-    padding: 0 35px;
+    position: relative;
+
 }
-.procedimentos .carrossel{
+
+.wrapper i{
+    height: 50px;
+    width: 50px;
+    background: #FBF9F6;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    color: #6C3F1F;
+}
+.wrapper i:first-child {
+    left: -22px;
+}
+.wrapper i:last-child {
+    right: -22px;
+}
+
+
+
+.wrapper .carrossel{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
-    gap: 10px;
-    overflow: hidden;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+
+    @media screen and (max-width: 900px) {
+    grid-auto-columns: calc((100% / 2) - 8px);
+}
+    @media screen and (max-width: 625px) {
+    grid-auto-columns: 100%;
+}
 }
 
-.carrossel :where(.card, .card img){
+.carrossel::-webkit-scrollbar{
+    display: none;
+}
+.carrossel :where(.card, .img){
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+
+}
+.carrossel.dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
 }
 .carrossel .dragging .card{
     cursor: grab;
@@ -132,26 +176,41 @@ button{
 }
 
 .carrossel .card{
+    scroll-snap-align: start;
     list-style: none;
-    color:#6C3F1F;
-    height: 300px;
+    height: 342px;
     display: flex;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 15px;
+    border-radius: 5%;
+    background: #FBF9F6;
 
 
-}
+    }
 
 
-.card img{
-    width: 250px;
-    height: 250px;
+.card .img img{
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 1%;
+    border-radius: 20%;
 
 }
+.card .img{
+
+    width: 228px;
+    height: 228px;
+    border-radius: 22%;
+    border: 3px solid #6C3F1F;
+}
+.card h3{
+    color: #6C3F1F;
+    padding: 17px;
+}
+
 
 .procedimentos a{
 
@@ -169,7 +228,7 @@ button{
 .procedimentos a:hover{
     color: #FBF9F6;
     background-color: #6C3F1F;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
 }
 
 
@@ -186,8 +245,9 @@ button{
 }
 .sobre img{
     width: 280px;
-    padding: 25px;
-    margin-right: 50px;
+
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .sobre ul{
     padding: 10px;
@@ -210,7 +270,7 @@ button{
 /* Footer*/
 .fa-brands {
     /* color: #bda556; */
-    color:#997C61;
+    color: #997C61;
     font-size: 25px;
     margin-right: 15px;
 }

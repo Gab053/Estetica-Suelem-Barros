@@ -9,11 +9,11 @@
 </head>
 <body>
      <header>
-        <div><a href="/homepage"><img src="../static/img/logo.png" class="header-logo"></a></div>
+        <div><a href="/"><img src="../static/img/logo.png" class="header-logo"></a></div>
         <ul>
             <a href="/login">Agendar</a>
             <a href="#">Procedimentos</a>
-            <a href="#">A Estética</a>
+            <a href="/" id="irSobre">A Estética</a>
         </ul>
         <ul>
         <a href="/login">Acessar</a>
@@ -22,7 +22,7 @@
 
     <nav class="banner">
     <div>
-        <a href="#">Faça seu agendamento</a>
+        <a href="/login">Faça seu agendamento</a>
     </div>
     <div>
         <img src="../static/img/banner.png">
@@ -30,30 +30,32 @@
 </nav>
     <div class="procedimentos">
         <div><h4>PROCEDIMENTOS</h4></div>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carrossel">
+                <li class="card">
+                    <div class="img"><img src="../static/img/criolipose.jpeg" draggable="false"></div>
+                    <h3>Criolipóse de Placas</h3>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../static/img/endolaser.jpg" draggable="false"></div>
+                    <h3>Endolaser</h3>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../static/img/radiofrequencia.jpg" draggable="false"></div>
+                    <h3>Radiofrequência</h3>
+                <li class="card">
+                    <div class="img"><img src="../static/img/ozonioterapia.jpg" draggable="false"></div>
+                    <h3>Ozonioterapia</h3>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../static/img/carboxterapia.jpg" draggable="false"></div>
+                    <h3>Carboxterapia</h3>
+                </li>
 
-        <ul class="carrossel">
-            <li class="card">
-                <img src="../static/img/criolipose.jpeg" draggable="false">
-                <h3>Criolipóse de Placas</h3>
-            </li>
-            <li class="card">
-                <img src="../static/img/endolaser.jpg" draggable="false">
-                <h3>Endolaser</h3>
-            </li>
-            <li class="card">
-                <img src="../static/img/radiofrequencia.jpg" draggable="false">
-                <h3>Radiofrequência</h3>
-            <li class="card">
-                <img src="../static/img/ozonioterapia.jpg" draggable="false">
-                <h3>Ozonioterapia</h3>
-            </li>
-            <li class="card">
-                <img src="../static/img/carboxterapia.jpg" draggable="false">
-                <h3>Carboxterapia</h3>
-            </li>
-
-        </ul>
-
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right" ></i>
+        </div>
         <div><a href="#">Veja mais procedimentos</a></div>
 
     </div>
