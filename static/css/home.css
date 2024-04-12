@@ -159,8 +159,8 @@ header i{
     font-size: 17px;
     padding: 10px 30px;
     border: solid 2px #6C3F1F;
-    color: #6C3F1F;
-    background-color: #FBF9F6;
+    color: #FBF9F6;
+    background-color:#6C3F1F ;
     border-radius: 30px;
     text-decoration: none;
         margin: 0 0 0 100px;
@@ -169,8 +169,8 @@ header i{
     
 }
 .banner a:hover{
-    background-color: #6C3F1F;
-    color: #FBF9F6;
+    background-color: #FBF9F6;
+    color: #6C3F1F;
 
     transition: 100ms linear;
 
