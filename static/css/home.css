@@ -9,29 +9,109 @@ body{
     color: #997C61;
 }
     /* Header*/
-header{
-
-    font-size: 13px;
+header .head{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    font-size: 13px;
     width: 100%;
     background-color: #FBF9F6;
     border-bottom: 1px solid #997C61;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     position: fixed;
     top: 0px;
+    right: 0px;
     z-index: 4;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
+header i{
+    margin-right: 50px;
+    font-size: 20px;
+}
 .header-logo{
-    padding:3px;
-    width:180px
+    margin-left: 50px;
+    padding:5px;
+    width:180px;
 
 }
-header ul a{
+.center{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sidebar{
+    list-style: none;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #FBF9F6;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+
+
+    @media(max-width:400px){
+   width: 100%;
+   }
+}
+
+.sidebar li{
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+.sidebar a{
+
+    color: #997C61;
+    text-decoration: none;
+    font-size: 13px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+
+}
+.sidebar a:hover{
+    background-color: #856441;
+    color: #FBF9F6;
+}
+.menubutton{
+    display: none;
+}
+
+@media(max-width: 995px){
+    .hideOnMobile{
+        display: none;
+    }
+    .header-logo{
+    width:250px;
+    }
+    .menubutton{
+        display: block;
+    }
+}
+
+
+
+.head ul a{
+    list-style: none;
     margin-right: 40px;
     padding: 8px 15px;
     color: #997C61;
@@ -39,15 +119,12 @@ header ul a{
     border-radius: 20px;
     transition: 100ms linear;
 }
-header ul a:hover {
+.head ul a:hover {
     color: #FBF9F6;
-    background-color: #997C61;
+    background-color: #856441;
     border-radius: 16px;
     text-decoration: none;
     transition: 80ms linear;
-}
-button{
-    font-family: 'Comfortaa';
 }
 
 /* Banner*/
@@ -56,6 +133,11 @@ button{
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
+    min-height: 500px;
+
+    @media screen and (max-width: 910px) {
+    background-image: url("/static/img/banner.png");
+    }
 }
 
 
@@ -64,6 +146,11 @@ button{
     padding: 10px 0 0 0;
     margin: 0 100px 0 0px;
      z-index: -1;
+     self-align: flex-end;
+
+     @media screen and (max-width: 910px) {
+    width:0px;
+    }
 }
 .banner a{
     font-size: 17px;
@@ -76,6 +163,9 @@ button{
         margin: 0 0 0 100px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: 80ms linear;
+     @media screen and (max-width: 910px) {
+
+    }
 }
 .banner a:hover{
     background-color: #6C3F1F;
@@ -91,7 +181,7 @@ button{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    width: auto;
     min-height: 600px;
 
 
@@ -151,10 +241,10 @@ button{
 
     @media screen and (max-width: 900px) {
     grid-auto-columns: calc((100% / 2) - 8px);
-}
+    }
     @media screen and (max-width: 625px) {
     grid-auto-columns: 100%;
-}
+    }
 }
 
 .carrossel::-webkit-scrollbar{

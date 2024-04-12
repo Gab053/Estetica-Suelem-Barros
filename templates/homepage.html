@@ -8,16 +8,28 @@
 
 </head>
 <body>
+
      <header>
+         <ul class="sidebar">
+             <li onclick=offSidebar()><a><i class="fa-solid fa-xmark"></a></i></li>
+            <li><a href="/login">Agendar</a></li>
+            <li><a href="#">Procedimentos</a></li>
+            <li><a href="/" id="irSobre">A Estética</a></li>
+            <li><a href="/login">Entrar</a><li>
+         </ul>
+         <div class="head">
         <div><a href="/"><img src="../static/img/logo.png" class="header-logo"></a></div>
-        <ul>
-            <a href="/login">Agendar</a>
-            <a href="#">Procedimentos</a>
-            <a href="/" id="irSobre">A Estética</a>
+        <ul class="center">
+            <li class="hideOnMobile"><a href="/login">Agendar</a></li>
+            <li class="hideOnMobile"><a href="#">Procedimentos</a></li>
+            <li class="hideOnMobile"><a href="/">A Estética</a></li>
         </ul>
-        <ul>
-        <a href="/login">Acessar</a>
+        <ul class="right">
+            <li class="hideOnMobile"><a href="/login">Entrar</a></li>
         </ul>
+            <ul class="menubutton" onclick=showSidebar()><i class="fa-solid fa-bars"></i></ul>
+        </div>
+
     </header>
 
     <nav class="banner">
@@ -27,7 +39,7 @@
     <div>
         <img src="../static/img/banner.png">
     </div>
-</nav>
+    </nav>
     <div class="procedimentos">
         <div><h4>PROCEDIMENTOS</h4></div>
         <div class="wrapper">
@@ -64,8 +76,8 @@
             <img src="../static/img/sobre.jpg" alt="img">
         </div>
         <ul>
-                <h2>Cuidado e Amor!<h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum interdum commodo. Quisque commodo tellus at leo laoreet aliquam. Integer lobortis ex quis mauris venenatis fringilla. Suspendisse lorem leo, consectetur in tempor vel, tempor ut est. Suspendisse felis sapien, blandit ac dui vel, mattis auctor lorem. Suspendisse a nulla fermentum, scelerisque nulla at, semper arcu. Nunc ultricies enim a rutrum sodales. In suscipit finibus libero sed ornare.<p>
+                <h2>Cuidado e Amor!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum interdum commodo. Quisque commodo tellus at leo laoreet aliquam. Integer lobortis ex quis mauris venenatis fringilla. Suspendisse lorem leo, consectetur in tempor vel, tempor ut est. Suspendisse felis sapien, blandit ac dui vel, mattis auctor lorem. Suspendisse a nulla fermentum, scelerisque nulla at, semper arcu. Nunc ultricies enim a rutrum sodales. In suscipit finibus libero sed ornare.</p>
 
         </ul>
     </div>
