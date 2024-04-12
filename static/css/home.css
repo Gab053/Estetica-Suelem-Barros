@@ -132,15 +132,12 @@ header i{
 /* Banner*/
 .banner{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
-    height: 700px;
-    background: url("/static/img/banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media screen and (max-width: 910px){
+    height: 500px;
+    @media screen and (max-width: 910px) {
+        height:40%;
     }
 }
 
@@ -159,18 +156,20 @@ header i{
     font-size: 17px;
     padding: 10px 30px;
     border: solid 2px #6C3F1F;
-    color: #FBF9F6;
-    background-color:#6C3F1F ;
+    color: #6C3F1F;
+    background-color: #FBF9F6;
     border-radius: 30px;
     text-decoration: none;
         margin: 0 0 0 100px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: 80ms linear;
-    
+     @media screen and (max-width: 910px) {
+
+    }
 }
 .banner a:hover{
-    background-color: #FBF9F6;
-    color: #6C3F1F;
+    background-color: #6C3F1F;
+    color: #FBF9F6;
 
     transition: 100ms linear;
 
@@ -198,12 +197,6 @@ header i{
     margin: 10px 50px 0 50px;
     font-size: 20px;
     padding: 8px 20px;
-    
-    @media screen and (max-width: 910px){
-        font-size: 2.5rem;
-    }
-
-
 }
 
 .wrapper{
@@ -322,10 +315,6 @@ header i{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: 80ms linear;
     margin: 0 30px 0 20px;
-
-    @media screen and (max-width: 700px) {
-    font-size: 2rem;
-    }
 }
 .procedimentos a:hover{
     color: #FBF9F6;
