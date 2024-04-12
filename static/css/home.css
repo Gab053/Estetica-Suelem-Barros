@@ -27,7 +27,7 @@ header .head{
 }
 header i{
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 60px;
 }
 .header-logo{
     margin-left: 50px;
@@ -53,7 +53,7 @@ header i{
     right: 0;
     top: 0px;
     height: 100vh;
-    width: 250px;
+    width: 40%;
     z-index: 999;
     background-color: #FBF9F6;
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
@@ -64,10 +64,12 @@ header i{
     margin: 0;
 
 
-    @media(max-width:400px){
+}
+ @media(max-width: 400px){
+    .sidebar{
    width: 100%;
    }
-}
+   }
 
 .sidebar li{
     margin-right: auto;
@@ -82,9 +84,9 @@ header i{
 
     color: #997C61;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 1.9rem;
     width: 100%;
-    padding: 20px 20px 20px 20px;
+    padding: 30px 20px;
     margin: 0;
 
 }
@@ -101,7 +103,7 @@ header i{
         display: none;
     }
     .header-logo{
-    width:250px;
+    width:400px;
     }
     .menubutton{
         display: block;
@@ -130,13 +132,12 @@ header i{
 /* Banner*/
 .banner{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
-    min-height: 500px;
-
+    height: 500px;
     @media screen and (max-width: 910px) {
-    background-image: url("/static/img/banner.png");
+        height:40%;
     }
 }
 
@@ -144,13 +145,12 @@ header i{
 .banner img{
     width: 400px;
     padding: 10px 0 0 0;
-    margin: 0 100px 0 0px;
+    margin: 0 100px 0 50px;
      z-index: -1;
-     self-align: flex-end;
+     display: flex;
 
-     @media screen and (max-width: 910px) {
-    width:0px;
-    }
+
+
 }
 .banner a{
     font-size: 17px;
@@ -185,6 +185,7 @@ header i{
     min-height: 600px;
 
 
+
     border-top: 3px solid #6C3F1F;
     margin-top: -4px;
     background-color: #FBF9F6;
@@ -200,7 +201,7 @@ header i{
 
 .wrapper{
     max-width: 1100px;
-    width: 100%;
+    width: 80%;
     position: relative;
 
 }
@@ -238,11 +239,12 @@ header i{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-width: 0;
+    margin-right: -40px;
 
-    @media screen and (max-width: 900px) {
-    grid-auto-columns: calc((100% / 2) - 8px);
+    @media screen and (max-width: 1100px) {
+    grid-auto-columns: calc((100% / 2) - 0px);
     }
-    @media screen and (max-width: 625px) {
+    @media screen and (max-width: 700px) {
     grid-auto-columns: 100%;
     }
 }
@@ -274,10 +276,9 @@ header i{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 15px;
+    padding: 15px;
     border-radius: 5%;
     background: #FBF9F6;
-
 
     }
 

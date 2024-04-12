@@ -11,21 +11,23 @@
 <body>
        <header>
          <ul class="sidebar">
+             <li onclick=offSidebar()><i class="fa-solid fa-xmark"></i></li>
             <li><a href="/login">Agendar</a></li>
             <li><a href="#">Procedimentos</a></li>
-            <li><a href="/" id="irSobre">A Estética</a></li>
+            <li><a href="#" id="irSobre">A Estética</a></li>
             <li><a href="/login">Entrar</a><li>
          </ul>
          <div class="head">
         <div><a href="/"><img src="../static/img/logo.png" class="header-logo"></a></div>
         <ul class="center">
-            <li><a href="/login">Agendar</a></li>
-            <li><a href="#">Procedimentos</a></li>
-            <li><a href="/">A Estética</a></li>
+            <li class="hideOnMobile"><a href="/login">Agendar</a></li>
+            <li class="hideOnMobile"><a href="#">Procedimentos</a></li>
+            <li class="hideOnMobile"><a href="#">A Estética</a></li>
         </ul>
         <ul class="right">
-        <li><a href="/login">Entrar</a><li>
+            <li class="hideOnMobile"><a href="/login">Entrar</a></li>
         </ul>
+            <ul class="menubutton" onclick=showSidebar()><i class="fa-solid fa-bars"></i></ul>
         </div>
 
     </header>
