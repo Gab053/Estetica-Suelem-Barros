@@ -136,8 +136,11 @@ header i{
     align-items: center;
     margin-top: 50px;
     height: 500px;
-    @media screen and (max-width: 910px) {
-        height:40%;
+    background: url("/static/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 910px){
     }
 }
 
@@ -163,9 +166,7 @@ header i{
         margin: 0 0 0 100px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: 80ms linear;
-     @media screen and (max-width: 910px) {
-
-    }
+    
 }
 .banner a:hover{
     background-color: #6C3F1F;
