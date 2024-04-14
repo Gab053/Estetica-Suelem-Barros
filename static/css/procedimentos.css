@@ -1,0 +1,75 @@
+        /* Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+header{
+
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #FBF9F6;
+    border-bottom: 1px solid #997C61;
+    border-radius: 20px;
+    position: fixed;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.header-logo{
+    padding:3px;
+    width:180px
+
+}
+header ul a{
+    margin-right: 40px;
+    padding: 8px;
+    color: #997C61;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 100ms linear;
+}
+header ul a:hover {
+    color: #FBF9F6;
+    background-color: #997C61;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: 80ms linear;
+}
+button{
+    font-family: 'Comfortaa';
+
+}
+        
+        /* fonte, cor e fundo */
+        body {
+            font-family: 'Comfortaa';
+            background-color: #FBF9F6;
+            color: #997C61;
+        }
+        .procedimentos {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        
+            min-height: 600px;
+        
+        
+            border-top: 3px solid #6C3F1F;
+            margin-top: -4px;
+            background-color: #FBF9F6;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        img {
+            width: 280px;
+            padding: 25px;
+            margin-right: 50px;
+        }

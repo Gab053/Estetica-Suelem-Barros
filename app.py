@@ -14,6 +14,11 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/procedimentos")
+def procedimentos():
+    return render_template("procedimentos.html")
+
+
 # Colocar o site no ar
 if __name__ == "__main__":
     app.run(debug=True)
