@@ -77,13 +77,4 @@ document.getElementById("irSobre").addEventListener("click", function() {
 });
 
 
-//sidebar aparece
-function showSidebar(){
-     const sidebar =  document.querySelector(".sidebar")
-     sidebar.style.display = 'flex'
-}
-//sidebar desaparece
-function offSidebar(){
-     const sidebar =  document.querySelector(".sidebar")
-     sidebar.style.display = 'none'
-}
+

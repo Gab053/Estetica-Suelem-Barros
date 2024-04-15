@@ -1,8 +1,7 @@
-// JavaScript para adicionar funcionalidade de ampliação de imagem quando clicada
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('img').forEach(img => {
-        img.addEventListener('click', function() {
-            window.open(this.src, '_blank');
-        });
-    });
-});
+function showSidebar() {
+    document.querySelector('.sidebar').style.transform = 'translateX(0)';
+}
+
+function offSidebar() {
+    document.querySelector('.sidebar').style.transform = 'translateX(-100%)';
+}
